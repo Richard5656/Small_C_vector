@@ -1,2 +1,4 @@
 # Small_C_vector
-Small C vector library for my reference
+
+
+This is a small C vector library I wrote. I will use it for future projects.
