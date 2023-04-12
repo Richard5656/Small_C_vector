@@ -30,7 +30,7 @@ void push(struct vector * self,void * item){
 void * pop(struct vector * self){
     memcpy(self->pop_buffer,((char*)self->data)+((self->index*self->size)-self->size),self->size);
 
-    self->data = realloc(self->data,(--self->index)*self->size);
+    self->data = realloc(self->data,(--self->index+1)*self->size);
     return self->pop_buffer;
 }
 
